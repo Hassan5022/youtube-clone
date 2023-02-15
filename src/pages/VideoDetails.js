@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/youtube";
 // axios
 import { fetchData } from "../utils/fetchData";
 // components
@@ -46,6 +46,8 @@ const VideoDetails = () => {
 							url={`https://www.youtube.com/watch?v=${id}`}
 							className="react-player"
 							controls
+							config={{youtube: {playerVars: {
+								origin: "https://youtube-clone-site.vercel.app"}}}}
 						/>
 						<Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
 							{title}
@@ -68,10 +70,10 @@ const VideoDetails = () => {
 							</Link>
 							<Stack direction="row" gap="20px" alignItems="center">
 								<Typography variant="body1" sx={{ opacity: 0.7 }}>
-									{parseInt(viewCount).toLocaleString()} views
+									{parseInt(viewCount).toLocaleString("en-US")} views
 								</Typography>
 								<Typography variant="body1" sx={{ opacity: 0.7 }}>
-									{parseInt(likeCount).toLocaleString()} likes
+									{parseInt(likeCount).toLocaleString("en-US")} likes
 								</Typography>
 							</Stack>
 						</Stack>
