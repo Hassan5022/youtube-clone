@@ -8,8 +8,8 @@ const SideBar = ({setSelectedCategory, selectedCategory}) => {
 		<Stack
 			direction="row"
 			sx={{
-				overflowY: "hidden",
-				height: { sx: "auto", md: "95%" },
+				overflowY: "auto",
+				height: { sx: "auto", md: "94%" },
 				flexDirection: { md: "column" },
 			}}
 		>

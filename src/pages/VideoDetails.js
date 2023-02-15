@@ -46,8 +46,7 @@ const VideoDetails = () => {
 							url={`https://www.youtube.com/watch?v=${id}`}
 							className="react-player"
 							controls
-							config={{youtube: {playerVars: {
-								origin: "https://youtube-clone-site.vercel.app"}}}}
+							playing
 						/>
 						<Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
 							{title}
