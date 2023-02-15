@@ -58,6 +58,21 @@ const Home = () => {
 					{selectedCategory} <span style={{ color: "#F31503" }}>videos</span>
 				</Typography>
 				<Videos videos={videos} />
+				{/* for mobile */}
+				<Typography
+					className="m-copyright"
+					variant="body2"
+					sx={{ mt: 1.5, color: "#fff" }}
+				>
+					Copyright &copy; 2023 |{" "}
+					<Link
+						className="hassan"
+						target="_blank"
+						to="https://www.linkedin.com/in/hassanahmed0805"
+					>
+						Hassan Ahmed
+					</Link>
+				</Typography>
 			</Box>
 		</Stack>
 	);

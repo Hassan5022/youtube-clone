@@ -41,6 +41,10 @@ a {
 	transition: all 0.3s ease;
 }
 
+.m-copyright {
+	display: none !important;
+}
+
 .category-btn:hover {
 	background-color: #fc1503 !important;
 	color: white !important;
@@ -68,9 +72,9 @@ a {
 	width: 350px;
 }
 
-@media screen and (max-width: 800px) {
-	.copyright {
-		display: none !important;
+@media screen and (max-width: 520px) {
+	.m-copyright {
+		display: block !important;
 	}
 }
 
