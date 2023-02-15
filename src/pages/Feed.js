@@ -37,14 +37,13 @@ const Home = () => {
 					variant="body2"
 					sx={{ mt: 1.5, color: "#fff" }}
 				>
-					Copyright &copy; 2023{" "}
+					Copyright &copy; 2023 |{" "}
 					<Link
 						className="hassan"
 						target="_blank"
 						to="https://www.linkedin.com/in/hassanahmed0805"
-						// style={{ color: "white" }}
 					>
-						Hassan Ahmed
+						Hassan
 					</Link>
 				</Typography>
 			</Box>
