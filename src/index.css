@@ -78,6 +78,12 @@ a {
 	}
 }
 
+@media screen and (max-width: 800px) {
+	.copyright {
+		display: none !important;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.category-btn {
 		margin: 10px;
