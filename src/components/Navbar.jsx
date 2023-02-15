@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { logo } from "../utils/constants";
+import logo from "../utils/logo.png";
 // component
 import { SearchBar } from "./";
 // styles

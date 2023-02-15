@@ -50,6 +50,14 @@ a {
 	color: white !important;
 }
 
+.hassan{
+	color: white;
+}
+
+.hassan:hover{
+	color: #fc1503;
+}
+
 .react-player {
 	height: 72vh !important;
 	width: 100% !important;

@@ -16,7 +16,7 @@ const Home = () => {
 
 		fetchData(`search?part=snippet&q=${selectedCategory}`)
 			.then((data) => setVideos(data.items))
-			.catch((e) => console.log(e));	
+			.catch((e) => console.log(e));
 	}, [selectedCategory]);
 
 	return (
@@ -37,8 +37,15 @@ const Home = () => {
 					variant="body2"
 					sx={{ mt: 1.5, color: "#fff" }}
 				>
-					{/* Copyright 2023 Hassan Ahmed */}
-					Copyright 2023 <Link style={{color: "white"}}>Hassan Ahmed</Link>
+					Copyright &copy; 2023{" "}
+					<Link
+						className="hassan"
+						target="_blank"
+						to="https://www.linkedin.com/in/hassanahmed0805"
+						// style={{ color: "white" }}
+					>
+						Hassan Ahmed
+					</Link>
 				</Typography>
 			</Box>
 
