@@ -1,20 +1,20 @@
-import SearchIcon from "@mui/icons-material/Search";
-import { Paper, IconButton } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// styles
+import { Paper, IconButton } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 const SearchBar = () => {
-	
-	const navigate = useNavigate()
-	const [searchTerm, setSearchTerm] = useState("")
+	const navigate = useNavigate();
+	const [searchTerm, setSearchTerm] = useState("");
 
 	const handleSubmit = (e) => {
-		e.preventDefault()
+		e.preventDefault();
 		if (searchTerm) {
-			navigate(`/search/${searchTerm}`)
-			setSearchTerm('')
+			navigate(`/search/${searchTerm}`);
+			setSearchTerm("");
 		}
-	}
+	};
 
 	return (
 		<Paper
@@ -24,6 +24,7 @@ const SearchBar = () => {
 				borderRadius: "20px",
 				border: "1px solid #e3e3e3",
 				pl: 2,
+				boxShadow: 'none',
 				mr: { sm: 5 },
 			}}
 		>

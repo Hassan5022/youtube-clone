@@ -1,12 +1,13 @@
+import { ChannelCard, VideoCard, Loader } from "./";
+// styles 
 import { Box, Stack } from "@mui/material";
-import { ChannelCard, VideoCard } from "./";
 
 const Videos = ({ videos, direction }) => {
 
-	if(!videos?.length) return "Loading..."
+	if(!videos?.length) return <Loader/>
 
 	return (
-		<Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" gap={2}>
+		<Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
 			{videos.map((element, id) => (
 				<Box key={id}>
 					{element.id.videoId && <VideoCard video={element} />}

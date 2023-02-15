@@ -1,5 +1,6 @@
-import { Stack } from "@mui/material";
 import { categories } from "../utils/constants";
+// styles 
+import { Stack } from "@mui/material";
 
 const SideBar = ({setSelectedCategory, selectedCategory}) => {
 
